@@ -6,7 +6,8 @@ const wonders = [
     buliders: "Egyptians",
     destruction: "N/A",
     cause: "N/A",
-    location: "Egypt"
+    location: "Egypt",
+    img: "./images/Pyramid-1.jpg"
   },
   {
     id: 2,
@@ -15,7 +16,8 @@ const wonders = [
     buliders: "Babylonians or Assyrians",
     destruction: "1 AD",
     cause: "Unknown",
-    location: "Iraq"
+    location: "Iraq",
+    img: "./images/Hanging Gardens of Babylon.jpg"
   },
 ];
 
