@@ -19,6 +19,16 @@ const wonders = [
     location: "Iraq",
     img: "./images/Hanging Gardens of Babylon.jpg"
   },
+  {
+    id: 3,
+    name: "Statue of Zeus at Olympia",
+    construction: "466-435 BC",
+    buliders: "Greeks",
+    destruction: "6 century AD",
+    cause: "Fire",
+    location: "Greece",
+    img: "./images/Statue of Zeus at Olympia.jpg"
+  }
 ];
 
 export default wonders;

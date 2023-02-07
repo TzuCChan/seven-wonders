@@ -1,9 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
 import { useState } from 'react';
 import Wonders from "./Wonders";
 import Categories from "./Categories";
 import items from "./name";
+
+const allAncients = ["all", ...new Set(items.map((item) => item.Category))]
 
 function App() {
   return (
