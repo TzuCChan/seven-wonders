@@ -19,24 +19,18 @@ function App() {
     const newItems = items.filter((item) => item.ancient === ancient);
     setWonderItems(newItems);
   };
-  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <section className='wonders section'>
+        <div className="Title">
+          <h2>seven wonders</h2>
+          <div className='underline'></div>
+        </div>
+        <Ancients ancients={ancients} filterItems={filterItems} />
+        <Wonders items={wondersItem} />
+      </section>
+    </main>
   );
 }
 
