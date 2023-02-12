@@ -28,7 +28,17 @@ const wonders = [
     cause: "Fire",
     location: "Greece",
     img: "./images/Statue of Zeus at Olympia.jpg"
-  }
+  },
+  {
+    id: 4,
+    name: "Temple of Artemis at Ephesus",
+    construction: "550 BC",
+    buliders: "Greeks",
+    destruction: "262 AD",
+    cause: "Plunder",
+    location: "Turkey",
+    img: "./images/Temple of Artemis at Ephesus.jpg"
+  },
 ];
 
 export default wonders;
