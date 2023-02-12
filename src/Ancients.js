@@ -1,18 +1,18 @@
 import React from "react";
 
-function Categories({ Categories, filterItems }) {
+function Ancients({ ancients, filterItems }) {
 
   return (
     <div className="btn-container">
-      {Categories.map((category, index) => {
+      {ancients.map((ancient, index) => {
         return (
           <button
             type="button"
             className="filter-btn"
             ket={index}
-            onClick={() => filterItems(category)}
+            onClick={() => filterItems(ancient)}
           >
-            {category}
+            {ancient}
           </button>
         );
       })}
@@ -20,4 +20,4 @@ function Categories({ Categories, filterItems }) {
   )
 }
 
-export default Categories
+export default Ancients

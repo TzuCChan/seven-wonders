@@ -2,12 +2,24 @@
 // import './App.css';
 import { useState } from 'react';
 import Wonders from "./Wonders";
-import Categories from "./Categories";
+import Ancients from "./Ancients";
 import items from "./name";
 
-const allAncients = ["all", ...new Set(items.map((item) => item.Category))]
+const allAncients = ["all", ...new Set(items.map((item) => item.ancient))]
 
 function App() {
+  const [wondersItem, setWonderItems] = useState(items);
+  const [ancients] = useState(allAncients);
+
+  const filterItems = (ancient) => {
+    if (ancients === "all") {
+      setWonderItems(items)
+      return;
+    }
+    const newItems = items.filter((item) => item.ancient === ancient);
+    setWonderItems(newItems);
+  };
+  
   return (
     <div className="App">
       <header className="App-header">
