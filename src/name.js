@@ -39,6 +39,36 @@ const wonders = [
     location: "Turkey",
     img: "./images/Temple of Artemis at Ephesus.jpg"
   },
+  {
+    id: 5,
+    name: "Mausoleum at Halicarnassus",
+    construction: "351 BC",
+    buliders: "Greeks",
+    destruction: "15 Century AD",
+    cause: "Earthquake",
+    location: "Turkey",
+    img: "./images/Mausoleum at Halicarnassus.jpg"
+  },
+  {
+    id: 6,
+    name: "Colossus of Rhodes",
+    construction: "292 BC",
+    buliders: "Greeks",
+    destruction: "226 BC",
+    cause: "Earthquake",
+    location: "Greece",
+    img: "./images/Colossus of Rhodes.jpg"
+  },
+  {
+    id: 7,
+    name: "Lighthouse of Alexandria",
+    construction: "280 BC",
+    buliders: "Greeks",
+    destruction: "1480 BC",
+    cause: "Earthquake",
+    location: "Egypt",
+    img: "./images/Lighthouse of Alexandria.png"
+  },
 ];
 
 export default wonders;
