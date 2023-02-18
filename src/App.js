@@ -3,21 +3,21 @@
 import { useState } from 'react';
 import Wonders from "./Wonders";
 import Ancients from "./Ancients";
-import items from "./name";
+import structures from "./name";
 
-const allAncients = ["all", ...new Set(items.map((item) => item.ancient))]
+const allAncients = ["all", ...new Set(structures.map((structure) => structure.ancient))]
 
 function App() {
-  const [wondersItem, setWonderItems] = useState(items);
+  const [wondersStructures, setWonderStructures] = useState(structures);
   const [ancients] = useState(allAncients);
 
-  const filterItems = (ancient) => {
+  const filterStructures = (ancient) => {
     if (ancients === "all") {
-      setWonderItems(items)
+      setWonderStructures(structures)
       return;
     }
-    const newItems = items.filter((item) => item.ancient === ancient);
-    setWonderItems(newItems);
+    const newStructures = structures.filter((structure) => structure.ancient === ancient);
+    setWonderStructures(newStructures);
   };
 
   return (
@@ -27,8 +27,8 @@ function App() {
           <h2>seven wonders</h2>
           <div className='underline'></div>
         </div>
-        <Ancients ancients={ancients} filterItems={filterItems} />
-        <Wonders items={wondersItem} />
+        <Ancients ancients={ancients} filterStructures={filterStructures} />
+        <Wonders structures={wondersStructures} />
       </section>
     </main>
   );

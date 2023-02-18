@@ -1,19 +1,19 @@
 import React from "react";
 
-const Wonders = ({ items }) => {
+const Wonders = ({ structures }) => {
   return (
     <div className="section-center">
-      {items.map((wondersItem) => {
-        const { id, name, construction, builders, destruction, cause, location, img } = wondersItem;
+      {structures.map((wondersStructure) => {
+        const { id, name, construction, builders, destruction, cause, location, img } = wondersStructure;
         return (
-          <article key={id} className="Wonders-item">
+          <article key={id} className="Wonders-structure">
             <img src={img} alt={name} className="photo" />
-            <div className="item-info">
+            <div className="structure-info">
               <header>
                 <h4>{name}</h4>
                 <h4 className="location">${location}</h4>
               </header>
-              <p className="item-text">{builders}</p>
+              <p className="structure-text">{builders}</p>
             </div>
           </article>
         );

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Ancients({ ancients, filterItems }) {
+function Ancients({ ancients, filterStructures }) {
 
   return (
     <div className="btn-container">
@@ -10,7 +10,7 @@ function Ancients({ ancients, filterItems }) {
             type="button"
             className="filter-btn"
             ket={index}
-            onClick={() => filterItems(ancient)}
+            onClick={() => filterStructures(ancient)}
           >
             {ancient}
           </button>
