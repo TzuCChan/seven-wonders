@@ -11,7 +11,7 @@ const Wonders = ({ structures }) => {
             <div className="structure-info">
               <header>
                 <h4>{name}</h4>
-                <h4 className="location">${location}</h4>
+                <h4 className="location">@{location}</h4>
               </header>
               <p className="structure-text">{builders}</p>
             </div>
