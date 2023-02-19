@@ -23,7 +23,7 @@ function App() {
   return (
     <main>
       <section className='wonders section'>
-        <div className="Title">
+        <div className="name">
           <h2>seven wonders</h2>
           <div className='underline'></div>
         </div>
