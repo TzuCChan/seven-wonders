@@ -27,7 +27,7 @@ function App() {
           <h2>seven wonders</h2>
           <div className='underline'></div>
         </div>
-        <Ancients ancients={ancients} filterStructures={filterStructures} />
+        {/* <Ancients ancients={ancients} filterStructures={filterStructures} /> */}
         <Wonders structures={wondersStructures} />
       </section>
     </main>

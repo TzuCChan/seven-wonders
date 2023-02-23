@@ -13,10 +13,10 @@ const Wonders = ({ structures }) => {
                 <h4>{name}</h4>
               </header>
                 <h4 className="location">location: {location}</h4>  
-                <p className="structure-text">builders: {builders}</p>
-                <p className="structure-text">construction: {construction}</p>
-                <p className="structure-text">destruction: {destruction}</p>
-                <p className="structure-text">cause: {cause}</p>
+                <p className="structure-text">Builders: {builders}</p>
+                <p className="structure-text">Construction: {construction}</p>
+                <p className="structure-text">Destruction: {destruction}</p>
+                <p className="structure-text">Cause: {cause}</p>
             </div>
           </article>
         );
